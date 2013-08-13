@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAdmins" targetNamespace="http://tempuri.org/dsAdmins.xsd" xmlns:mstns="http://tempuri.org/dsAdmins.xsd" xmlns="http://tempuri.org/dsAdmins.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAdmins" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsAdmins" msprop:Generator_DataSetName="dsAdmins" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtAdmins" msprop:Generator_UserTableName="dtAdmins" msprop:Generator_RowDeletedName="dtAdminsRowDeleted" msprop:Generator_RowChangedName="dtAdminsRowChanged" msprop:Generator_RowClassName="dtAdminsRow" msprop:Generator_RowChangingName="dtAdminsRowChanging" msprop:Generator_RowEvArgName="dtAdminsRowChangeEvent" msprop:Generator_RowEvHandlerName="dtAdminsRowChangeEventHandler" msprop:Generator_TableClassName="dtAdminsDataTable" msprop:Generator_TableVarName="tabledtAdmins" msprop:Generator_RowDeletingName="dtAdminsRowDeleting" msprop:Generator_TablePropName="dtAdmins">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="adminID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="adminID" msprop:Generator_ColumnPropNameInRow="adminID" msprop:Generator_ColumnVarNameInTable="columnadminID" msprop:Generator_ColumnPropNameInTable="adminIDColumn" type="xs:int" />
+              <xs:element name="name" msprop:Generator_UserColumnName="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="authType" msprop:Generator_UserColumnName="authType" msprop:Generator_ColumnPropNameInRow="authType" msprop:nullValue="_throw" msprop:Generator_ColumnVarNameInTable="columnauthType" msprop:Generator_ColumnPropNameInTable="authTypeColumn" type="xs:string" default="steam" minOccurs="0" />
+              <xs:element name="identity" msprop:Generator_UserColumnName="identity" msprop:Generator_ColumnPropNameInRow="identity" msprop:nullValue="_throw" msprop:Generator_ColumnVarNameInTable="columnidentity" msprop:Generator_ColumnPropNameInTable="identityColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="group" msprop:Generator_UserColumnName="group" msprop:Generator_ColumnPropNameInRow="group" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columngroup" msprop:Generator_ColumnPropNameInTable="groupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="immunity" msprop:Generator_UserColumnName="immunity" msprop:Generator_ColumnPropNameInRow="immunity" msprop:Generator_ColumnVarNameInTable="columnimmunity" msprop:Generator_ColumnPropNameInTable="immunityColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="flags" msprop:Generator_UserColumnName="flags" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="flags" msprop:Generator_ColumnPropNameInTable="flagsColumn" msprop:Generator_ColumnVarNameInTable="columnflags" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtAdmins" />
+      <xs:field xpath="mstns:adminID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
